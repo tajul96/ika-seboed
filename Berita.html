@@ -52,6 +52,48 @@ width: 50;
 .nama {
 text-align: left;
 }
+		.menu {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			background-color: white;
+			color: green;
+			white-space: nowrap;
+		}
+
+		.menu li {
+			position: relative;
+			display: inline-block;
+			padding: 5px;
+		}
+
+		.menu li:hover {
+			background-color: magenta;
+		}
+
+		.sub-menu {
+			display: none;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			background-color: magenta;
+			padding: 2px;
+			list-style: none;
+			white-space: nowrap;
+		}
+
+		.sub-menu li {
+			display: block;
+			padding: 2px;
+		}
+
+		.sub-menu li:hover {
+			background-color: gray;
+		}
+
+		.menu li:hover .sub-menu {
+			display: block;
+		}
 </style>
 	<nav>
 	<ul class="menu">
@@ -64,8 +106,8 @@ text-align: left;
 				<li><a href="#">Reuni Akbar</a></li>
 			</ul>
 		</li>
-			<li><a href="#">Dewan Guru</a></li>
-			<li><a href="#">Sekretariat</a></li>
+			<li><a href="berita.html">Berita</a></li>
+			<li><a href="kwitansi.html">Kwitansi</a></li>
 			
 	</ul>
 	</nav>
